@@ -7,6 +7,7 @@ def get_db():
 
 def init_db():
     conn = get_db()
+    # Add your new table between lines 15 & 16.
     conn.execute("""
         CREATE TABLE IF NOT EXISTS users (
             username TEXT PRIMARY KEY,

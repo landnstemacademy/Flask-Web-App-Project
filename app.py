@@ -77,9 +77,115 @@ def register():
 
 @app.route("/secret")
 def secret():
+    # TODO: RENAME THIS ROUTE TO /dashboard
+
     if "user" not in session:
         return redirect(url_for("login"))
+
+    # TODO: Connect to the database
+    # conn = get_db()
+
+    # TODO: Get all entries that belong to the logged-in user
+    # Example:
+    # entries = conn.execute(
+    #     "SELECT * FROM entries WHERE user=?",
+    #     (session["user"],)
+    # ).fetchall()
+
+    # TODO: Close the connection
+    # conn.close()
+
+    # TODO: Pass entries into your template
+    # Example:
+    # return render_template("dashboard.html", entries=entries, username=session["user"])
+
+    # TEMPORARY (remove later)
     return render_template("secret.html", username=session["user"])
+
+
+# ---------- CREATE ----------
+# TODO: Create a route like /create
+# This page should:
+# - Show a form (GET)
+# - Save data to the database (POST)
+# - Redirect back to dashboard
+# NOTE: Remove the triple """ before and after each route to 'uncomment'
+"""
+@app.route("/create", methods=["GET", "POST"])
+def create():
+    if "user" not in session:
+        return redirect(url_for("login"))
+
+    if request.method == "POST":
+        # TODO: Get form data (title, content)
+
+        # TODO: Connect to database
+
+        # TODO: Insert into entries table
+        # IMPORTANT: include session["user"]
+
+        # TODO: Commit and close
+
+        return redirect(url_for("dashboard"))
+
+    return render_template("create.html")
+"""
+
+# ---------- UPDATE ----------
+# TODO: Create a route like /edit/<id>
+# This page should:
+# - Load existing data
+# - Show it in a form
+# - Update the database on submit
+
+"""
+@app.route("/edit/<int:id>", methods=["GET", "POST"])
+def edit(id):
+    if "user" not in session:
+        return redirect(url_for("login"))
+
+    # TODO: Connect to database
+
+    # TODO: Get entry WHERE id AND user
+    # This prevents editing other users' data
+
+    # if not entry:
+    #     return "Not allowed"
+
+    if request.method == "POST":
+        # TODO: Get updated form data
+
+        # TODO: Update database
+        # IMPORTANT: include id AND session["user"]
+
+        # TODO: Commit and close
+
+        return redirect(url_for("dashboard"))
+
+    return render_template("edit.html", entry=entry)
+"""
+
+# ---------- DELETE ----------
+# TODO: Create a route like /delete/<id>
+# This should:
+# - Delete an entry from the database
+# - Redirect back to dashboard
+
+"""
+@app.route("/delete/<int:id>")
+def delete(id):
+    if "user" not in session:
+        return redirect(url_for("login"))
+
+    # TODO: Connect to database
+
+    # TODO: Delete entry WHERE id AND user
+
+    # TODO: Commit and close
+
+    return redirect(url_for("dashboard"))
+"""
+
 
 @app.route("/logout")
 def logout():
