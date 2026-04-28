@@ -14,9 +14,9 @@ When you finish, add your names and a demo video link here, then submit one link
 You will begin with a **pre-built login and authentication system**. Your job is to **extend this project into a full CRUD web application** using Flask and a database.
 
 Your application must allow users to:
-- Log in (already implemented)
-- Create data
-- View data
+- [Log in (already implemented)](https://youtu.be/2jqs1baIJtk)
+- [Create data](https://youtu.be/N2aPrWajhnI)
+- [View data](https://youtu.be/4ELzIbgIep4)
 - Edit data
 - Delete data
 
