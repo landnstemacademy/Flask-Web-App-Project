@@ -75,8 +75,8 @@ def register():
 
     return render_template("register.html", error=error)
 
-@app.route("/secret")
-def secret():
+@app.route("/dashboard")
+def dashboard():
     # TODO: RENAME THIS ROUTE TO /dashboard
 
     if "user" not in session:
@@ -88,8 +88,7 @@ def secret():
     # TODO: Get all entries that belong to the logged-in user
     # Example:
     # entries = conn.execute(
-    #     "SELECT * FROM entries WHERE user=?",
-    #     (session["user"],)
+    #     "SELECT * FROM entries"
     # ).fetchall()
 
     # TODO: Close the connection
@@ -100,7 +99,7 @@ def secret():
     # return render_template("dashboard.html", entries=entries, username=session["user"])
 
     # TEMPORARY (remove later)
-    return render_template("secret.html", username=session["user"])
+    return render_template("dashboard.html", username=session["user"])
 
 
 # ---------- CREATE ----------
