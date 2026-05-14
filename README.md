@@ -1,6 +1,7 @@
 # Coding I – Web Application Project
 
-**Due date:** 5/14 @ Midnight  
+**Due date:** L2: 5/19 @ End of Class  
+              N1: 5/20 @ End of Class  
 
 When you finish, add your names and a demo video link here, then submit one link to your project repository.
 
