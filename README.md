@@ -124,12 +124,12 @@ Each user should only be able to access and modify **their own data**.
 
 ---
 
-### Part IX: Reflection + Demo Video (25 pts)
+### Part IX: Demo Video (25 pts)
 - Demo must show:
   - Creating, viewing, editing, deleting entries
   - Login working with your CRUD system
   - All team members must speak
-- Reflection includes:
+- Each speaker must articulate:
   - What was hardest to implement
   - One bug or issue you solved
   - One improvement you would add
