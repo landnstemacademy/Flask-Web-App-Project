@@ -8,7 +8,7 @@ N1: 5/20 @ End of Class
 When you finish, add your names and a demo video link here, then submit one link to your project repository.
 
 **Group Members:** (list all group members here)  
-* [Demo Video (1 per group)](http://includeyourlinkhere)
+* [Demo Video (1 per group)]([http://includeyourlinkhere](https://new.express.adobe.com/id/urn:aaid:sc:VA6C2:17b20407-9241-410b-a723-495f5ee4e218?invite=true&accept=true&preload=sharesheet&promoid=Z2G1FQKR&mv=other))
 
 ---
 
